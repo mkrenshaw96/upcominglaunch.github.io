@@ -23,7 +23,7 @@ body {
     justify-content: space-around;
     align-items: center;
     font-weight: 300;
-    width: 140px;
+    width: 95px;
 }
 
 .logo {
@@ -172,7 +172,7 @@ a {
 
 .stat-head {
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .data-style {
@@ -186,4 +186,24 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch
+}
+
+.div-divider {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-between;
+}
+
+.live-vid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.live-info {
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding-left: 10px;
 }
