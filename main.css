@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    width: 170px;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    font-weight: 300;
+}
+
+.logo {
+    filter: invert(100%);
+    display: flex;
+    height: 30px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    bottom: 200px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.num {
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.lab {
+    display: flex;
+    justify-content: center;
+    font-size: .90em;
+    font-weight: 100;
+}
+
+.countdown {
+    position: relative;
+    top: 80vh;
+}
+
+.view {
+    position: relative;
+    background-image: url('./assets/starlink1_sunset_17.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 5rem;
+    font-weight: 100;
+    flex-direction: column;
+}
+
+.divider {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.upcoming {
+    font-size: 1rem;
+}
