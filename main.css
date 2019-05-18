@@ -99,3 +99,29 @@ body {
 .upcoming {
     font-size: 1rem;
 }
+
+.about-wrapper {
+    position: relative;
+    background-image: url('./assets/Space-X-falcon-heavy-space-rocket-Quad-HD-wallpapers-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.live-wrapper {
+    position: relative;
+    background-image: url('./assets/39128355825_7c4166dbbe_o.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
