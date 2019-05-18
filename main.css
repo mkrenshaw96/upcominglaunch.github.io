@@ -148,11 +148,42 @@ a {
     color: inherit;
 }
 
+.about-divider {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .about-title {
     font-size: 5rem;
     font-weight: 100;
 }
 
 .about-content {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.stats-title {
+    font-size: 5rem;
     font-weight: 100;
+}
+
+.stat-head {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.data-style {
+    font-weight: 300;
+    font-size: 1.1rem;
+
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch
 }
