@@ -8,7 +8,7 @@ let numSec = document.querySelector('div.num-secs');
 let headingDiv = document.querySelector('div.heading');
 let missionName;
 let newName;
-let about;
+let about = document.querySelector('div.about-content');
 let launchDateUnix;
 let countdown;
 let liveVideo;
@@ -28,12 +28,10 @@ fetch(baseURL)
 function displayResults(json) {
     upcomingLaunchInfo = json;
     //ABOUT PARAGRAPH
-    about = upcomingLaunchInfo.details;
-    //BACKGROUND IMAGE
-    // rocketImage = upcomingLaunchInfo.links.flickr_images[0];
-    // // img.src = rocketImage;
-    // img.style.background = rocketImage;
-    // console.log(rocketImage)
+    let details = upcomingLaunchInfo.details;
+    let cont = document.createElement('div');
+    cont.textContent = details;
+    about.appendChild(cont)
     //MISSION NAME 
     missionName = upcomingLaunchInfo.mission_name;
     newName = missionName.slice(0, -7)
@@ -67,3 +65,10 @@ function timer() {
     }, );
 
 }
+$("nav").find("a").click(function (e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
