@@ -1,0 +1,56 @@
+.about-wrapper {
+    position: relative;
+    background-image: url('../assets/Space-X-falcon-heavy-space-rocket-Quad-HD-wallpapers-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.about-divider {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-title {
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.about-content {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.stats-title {
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.stat-head {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.data-style {
+    font-weight: 300;
+    font-size: 1.1rem;
+
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch
+}
+
+.sbs {
+    display: flex;
+}

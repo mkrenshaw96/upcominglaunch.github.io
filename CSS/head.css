@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    bottom: 200px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.num {
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.lab {
+    display: flex;
+    justify-content: center;
+    font-size: .90em;
+    font-weight: 300;
+}
+
+.countdown {
+    position: relative;
+    top: 80vh;
+}
+
+.view {
+    position: relative;
+    background-image: url('../assets/starlink1_sunset_17.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 5rem;
+    font-weight: 100;
+    flex-direction: column;
+}
+
+.divider {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.upcoming {
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 5px;
+}

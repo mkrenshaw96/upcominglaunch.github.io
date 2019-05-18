@@ -1,0 +1,31 @@
+.live-wrapper {
+    position: relative;
+    background-image: url('../assets/39128355825_7c4166dbbe_o.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.live-divider {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+.live-vid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.live-info {
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}

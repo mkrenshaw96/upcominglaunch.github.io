@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./CSS/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -59,38 +59,63 @@
             <div class='data'>
                 <div class='rocket-data'>
                     <div class='stat-head'>Rocket</div>
-                    <div class='rock-id data-style'>ID: falcon9</div>
-                    <div class='rock-type data-style'>Type: FT</div>
-                    <div class='rock-recov data-style'>Recovery Attempt: false</div>
-                    <div class='rock-reuse data-style'>Reused: false</div>
+                    <div class='sbs'>
+                        <div class='data-style'>ID:&nbsp</div>
+                        <div class='rock-id data-style'></div>
+                    </div>
+                    <div class='sbs'>
+                        <div class='data-style'>Type:&nbsp</div>
+                        <div class='rock-type data-style'></div>
+                    </div>
+                    <div class='sbs'>
+                        <div class='data-style'>Recovery Attempt:&nbsp</div>
+                        <div class='rock-recov data-style'></div>
+                    </div>
+                    <div class='sbs'>
+                        <div class='data-style'>Reused:&nbsp</div>
+                        <div class='rock-reuse data-style'></div>
+                    </div>
                 </div>
                 <div class='payload-data'>
                     <div class='stat-head'>Payload</div>
-                    <div class='pay-type data-style'>Type: Satallite</div>
-                    <div class='pay-mass data-style'>Mass: 30027 lbs</div>
-                    <div class='pay-orb data-style'>Orbit: Geocentric</div>
-                    <div class='pay-orb-type data-style'>Orbit Type: VLEO</div>
+                    <div class='sbs'>
+                        <div class='data-style'>Type:&nbsp</div>
+                        <div class='pay-type data-style'></div>
+                    </div>
+                    <div class='sbs'>
+                        <div class='data-style'>Mass:&nbsp</div>
+                        <div class='pay-mass data-style'></div>
+                    </div>
+                    <div class='sbs'>
+                        <div class='data-style'>Orbit:&nbsp</div>
+                        <div class='pay-orb data-style'></div>
+                    </div>
+                    <div class='sbs'>
+                        <div class='data-style'>Orbit Type:&nbsp</div>
+                        <div class='pay-orb-type data-style'></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class='live-wrapper' id='live'>
-        <div class='div-divider'>
+        <div class='live-divider'>
             <div>
-                <div class='about-title'>Liive</div>
+                <div class='about-title'>Live</div>
                 <div class='live-info'>watch the launch broadcast below</div>
             </div>
             <div>
                 <div class='live-vid'>
-                    <iframe src="https://www.youtube.com/embed/AfbIMknNWks" frameborder="0"
+                    <iframe class='live' src="" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </div>
+
         </div>
+    </div>
 
-
-        <script src='./main.js'></script>
+    <script src='./main.js'></script>
 
 </body>
 
