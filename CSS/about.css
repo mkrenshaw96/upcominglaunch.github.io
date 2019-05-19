@@ -26,6 +26,7 @@
 .about-content {
     font-weight: 300;
     font-size: 1.1rem;
+    max-width: 1000px;
 }
 
 .stats-title {
@@ -53,4 +54,38 @@
 
 .sbs {
     display: flex;
+}
+
+.stage1-data {
+    display: none;
+}
+
+.stage2-data {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .about-divider {
+        align-items: center;
+    }
+
+    .about-content {
+        font-size: 1.5rem;
+    }
+
+    .stage1-data {
+        display: block;
+    }
+
+    .stage2-data {
+        display: block;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70vw;
+        max-width: 70vw;
+    }
 }

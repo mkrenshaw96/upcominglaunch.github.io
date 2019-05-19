@@ -56,52 +56,93 @@
             <div class='about-title'>About</div>
             <div class='about-content'></div>
             <div class='stats-title'>Stats</div>
-            <div class='data'>
-                <div class='rocket-data'>
-                    <div class='stat-head'>Rocket</div>
-                    <div class='sbs'>
-                        <div class='data-style'>ID:&nbsp</div>
-                        <div class='rock-id data-style'></div>
+            <div class='info-wrapper'>
+                <div class='data'>
+                    <div class='rocket-data'>
+                        <div class='stat-head'>Rocket</div>
+                        <div class='sbs'>
+                            <div class='data-style'>ID:&nbsp</div>
+                            <div class='rock-id data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Type:&nbsp</div>
+                            <div class='rock-type data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Recovery:&nbsp</div>
+                            <div class='rock-recov data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Reused:&nbsp</div>
+                            <div class='rock-reuse data-style'></div>
+                        </div>
                     </div>
-                    <div class='sbs'>
-                        <div class='data-style'>Type:&nbsp</div>
-                        <div class='rock-type data-style'></div>
+                    <div class='payload-data'>
+                        <div class='stat-head'>Payload</div>
+                        <div class='sbs'>
+                            <div class='data-style'>Type:&nbsp</div>
+                            <div class='pay-type data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Mass:&nbsp</div>
+                            <div class='pay-mass data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Orbit:&nbsp</div>
+                            <div class='pay-orb data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Orbit Type:&nbsp</div>
+                            <div class='pay-orb-type data-style'></div>
+                        </div>
                     </div>
-                    <div class='sbs'>
-                        <div class='data-style'>Recovery Attempt:&nbsp</div>
-                        <div class='rock-recov data-style'></div>
+                    <div class='stage1-data'>
+                        <div class='stat-head'>Stage 1</div>
+                        <div class='sbs'>
+                            <div class='data-style'>Landing:&nbsp</div>
+                            <div class='stag1-land data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Flight #:&nbsp</div>
+                            <div class='stag2-flight data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Serial:&nbsp</div>
+                            <div class='stag1-serial data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Reused:&nbsp</div>
+                            <div class='stag1-reused data-style'></div>
+                        </div>
                     </div>
-                    <div class='sbs'>
-                        <div class='data-style'>Reused:&nbsp</div>
-                        <div class='rock-reuse data-style'></div>
-                    </div>
-                </div>
-                <div class='payload-data'>
-                    <div class='stat-head'>Payload</div>
-                    <div class='sbs'>
-                        <div class='data-style'>Type:&nbsp</div>
-                        <div class='pay-type data-style'></div>
-                    </div>
-                    <div class='sbs'>
-                        <div class='data-style'>Mass:&nbsp</div>
-                        <div class='pay-mass data-style'></div>
-                    </div>
-                    <div class='sbs'>
-                        <div class='data-style'>Orbit:&nbsp</div>
-                        <div class='pay-orb data-style'></div>
-                    </div>
-                    <div class='sbs'>
-                        <div class='data-style'>Orbit Type:&nbsp</div>
-                        <div class='pay-orb-type data-style'></div>
+                    <div class='stage2-data'>
+                        <div class='stat-head'>Stage 2</div>
+                        <div class='sbs'>
+                            <div class='data-style'>Block:&nbsp</div>
+                            <div class='stag2-block data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Pay ID:&nbsp</div>
+                            <div class='stag2-id data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Nationality:&nbsp</div>
+                            <div class='stag2-nat data-style'></div>
+                        </div>
+                        <div class='sbs'>
+                            <div class='data-style'>Reused:&nbsp</div>
+                            <div class='stag2-reused data-style'></div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <div class='live-wrapper' id='live'>
         <div class='live-divider'>
             <div>
-                <div class='about-title'>Live</div>
+                <div class='live-title'>Live</div>
                 <div class='live-info'>watch the launch broadcast below</div>
             </div>
             <div>
@@ -110,6 +151,9 @@
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
+                <!-- <div class='vid'>
+                    <div><img id='live-logo' src="./assets/live.svg" alt=""></div>
+                </div> -->
             </div>
 
         </div>

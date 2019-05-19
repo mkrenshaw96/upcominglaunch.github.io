@@ -24,70 +24,45 @@ fetch(baseURL)
         return response.json();
     })
     .then(function (json) {
-        // console.log(json)
+        console.log(json)
         displayResults(json);
     })
 
 function displayResults(json) {
-    //ABOUT PARAGRAPH
     let details = json.details;
     let cont = document.createElement('div');
     cont.textContent = details;
     about.appendChild(cont)
-
-    //MISSION NAME 
     missionName = json.mission_name;
     newName = missionName.slice(0, -7)
     let title = document.createElement('div');
     title.textContent = newName;
     headingDiv.appendChild(title);
-
-    //COUNTDOWN UNIX TIMER
     launchDateUnix = json.launch_date_unix;
     timer(launchDateUnix);
-
-    //ROCKET ID
     let id = json.rocket.rocket_id;
     rocketId.textContent = id;
-
-    //ROCKET TYPE
     let type = json.rocket.rocket_type;
     rocketType.textContent = type;
-
-    //ROCKET RECOVERY
     let recov = json.rocket.fairings.recovery_attempt;
     rocketRecov.textContent = recov;
-
-    //ROCKET REUSE
     let reuse = json.rocket.fairings.reused;
     rocketReuse.textContent = reuse;
-
-    //LIVE VIDEO
     let live = json.links.video_link;
     liveVideo.src = live;
-
-    //PAYLOAD TYPE
     let pType = json.rocket.second_stage.payloads[0].payload_type;
     payType.textContent = pType;
-
-    //PAYLOAD MASS
     let mass = json.rocket.second_stage.payloads[0].payload_mass_lbs;
     payMass.textContent = mass + lbs;
-
-    //PAYLOAD ORBIT
     let orbit = json.rocket.second_stage.payloads[0].orbit_params.reference_system;
     payOrb.textContent = orbit;
-
-    //PAYLOAD ORBIT TYPE
     let orbitType = json.rocket.second_stage.payloads[0].orbit
     payOrbType.textContent = orbitType;
 }
 
 function timer() {
     var deadline = new Date("June 1, 2019 15:37:25").getTime();
-
     var x = setInterval(function () {
-
         var now = new Date().getTime();
         var t = deadline - now;
         var days = Math.floor(t / (1000 * 60 * 60 * 24));

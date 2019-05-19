@@ -29,3 +29,38 @@
     font-size: 1.1rem;
     padding-left: 10px;
 }
+
+.vid {
+    width: 70vw;
+    height: 20vh;
+    background-image: url(../assets/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid white;
+}
+
+.live-title {
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+/* #live-logo {
+    filter: invert(100%);
+    width: 30vw;
+    height: 10vh;
+    margin: auto;
+} */
+@media screen and (min-width: 640px) {
+    .live-divider {
+        align-items: center;
+    }
+
+    .live-title {
+        text-align: center;
+    }
+}

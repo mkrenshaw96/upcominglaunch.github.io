@@ -69,3 +69,34 @@
     font-weight: 300;
     padding-left: 5px;
 }
+
+@media screen and (min-width: 640px) {
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    .main {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70vw;
+
+    }
+
+    .timer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .divider {
+        align-items: center;
+    }
+
+    .num {
+        font-size: 5.5rem;
+    }
+
+    .lab {
+        font-size: 1.2em;
+    }
+}
